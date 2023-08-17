@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-manrope overflow-x-hidden;
+}
+
+.bg-bottom {
+  clip-path: ellipse(100% 37% at 50% 51%);
+}
