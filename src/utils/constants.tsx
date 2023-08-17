@@ -5,6 +5,12 @@ import LeftPattern from '../assets/bg-pattern-3.svg';
 import RightPattern from '../assets/bg-pattern-2.svg';
 import Founder from '../assets/image-founder.webp';
 
+import {
+  AiOutlineInstagram,
+  AiOutlineTwitter,
+  AiFillFacebook,
+} from 'react-icons/ai';
+
 const featuresData = [
   {
     num: 1,
@@ -23,6 +29,33 @@ const featuresData = [
   },
 ];
 
+const socialData = [
+  {
+    title: 'facebook',
+    url: '/',
+    icon: <AiFillFacebook />,
+  },
+  {
+    title: 'twitter',
+    url: '/',
+    icon: <AiOutlineTwitter />,
+  },
+  {
+    title: 'instagram',
+    url: '/',
+    icon: <AiOutlineInstagram />,
+  },
+];
+
+const contactData = {
+  header: 'Be the first to test',
+  desc: `Hi, I'm Louis Graham, the founder of the company. Book a demo call
+  with me to become a beta tester for our app and kickstart your
+  company. Apply for access below and I’ll be in touch to schedule a
+  call.`,
+  button: 'Apply for access',
+};
+
 export {
   LightLogo,
   DarkLogo,
@@ -31,4 +64,6 @@ export {
   RightPattern,
   Founder,
   featuresData,
+  socialData,
+  contactData,
 };

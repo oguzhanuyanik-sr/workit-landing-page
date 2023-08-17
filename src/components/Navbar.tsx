@@ -1,17 +1,15 @@
 import { LightLogo } from '../utils/constants';
 import { Link } from 'react-router-dom';
 
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
-    <nav className='flex justify-between items-center pt-8 flex-wrap gap-5'>
+    <nav className='flex flex-wrap justify-between items-center pt-8 gap-5'>
       <Link to='/'>
-        <img className='h-6' src={LightLogo} alt='Logo' />
+        <img src={LightLogo} alt='Logo' />
       </Link>
       <Link
         to='/'
-        className='text-white border-b-[3px] border-green hover:text-green transition-all text-lg pb-1 text-center'
+        className='text-center text-lg text-white hover:text-green transition-all border-b-[3px] border-green pb-1'
       >
         Apply for access
       </Link>
